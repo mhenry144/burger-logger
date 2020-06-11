@@ -6,8 +6,10 @@ const handlebars = require('express-handlebars');
 
 app.set('view engine', 'handlebars');
 
-app.engine('handlebars', handlebars({
-  layoutsDir: `${__dirname}/views/layouts`
+app.engine('hbs', handlebars({
+  layoutsDir: `${__dirname}/views/layouts`,
+  extnamne: 'hbs',
+  defaultLayout: 'index'
 }));
 
 app.use(express.static("public"));
