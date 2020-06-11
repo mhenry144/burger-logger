@@ -1,1 +1,28 @@
 <h1>Burger Logger</h1>
+<!--  CREATE BURGERS  -->
+<form class="create-form">
+	<input type="text" name="burgerName" id="burgerName" placeholder="Enter New Burger Name...">
+	<button id="submitBurger">Submit</button>
+</form>
+<!--  UNEATEN BURGERS  -->
+<div id="uneaten-div">
+	<h3>Uneaten Burgers</h3>
+	<ul id="uneaten-list">
+		{{#each uneaten}}
+			<li class="uneaten-burger">
+				{{this.burger_name}}
+				<button class="eat-button" data-id="{{this.id}}">Eat!</button>
+			</li>
+		{{/each}}
+	</ul>
+</div>
+<!--  EATEN BURGERS  -->
+<div id="eaten-div">
+	<h3>Eaten Burgers</h3>
+	<ul id="eaten-list">
+		{{#each eaten}}
+			<li class="eaten-burger">{{this.burger_name}}</li>
+		{{/each}}
+	</ul>
+</div>
+
