@@ -10,7 +10,7 @@ var orm = {
   },
 
   insertBurger: function (newBurger, cb) {
-    var q = burger_db.query(
+    var query = burger_db.query(
       "INSERT INTO burgers (burger_name) VALUES (?)",
       [newBurger],
       function (err, data) {
@@ -20,7 +20,7 @@ var orm = {
       }
     );
 
-    console.log(q.sql);
+    console.log(query.sql);
   },
 
   updateBurger: function (burger, cb) {
@@ -28,7 +28,7 @@ var orm = {
       "UPDATE burgers SET ? WHERE ?",
       [
         {
-          devour: burger.devoured,
+          devoured: burger.devoured,
         },
         {
           id: burger.id,
