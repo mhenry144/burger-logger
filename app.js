@@ -16,12 +16,15 @@ var port = process.env.PORT || 3000;
 //    extname: "hbs",
 //  })
 //);
-app.use(express.static(path.join(__dirname + "public")));
+
+app.set("view engine", "handlebars");
+
+app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.engine("handlebars", handlebars({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+
 
 //app.get("/", (req, res) => {
 //  res.render("main", { layout: "index" });

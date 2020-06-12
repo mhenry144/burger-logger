@@ -2,12 +2,12 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-CREATE TABLE patties
+CREATE TABLE burgers
 (
-    id INTEGER(11) NOT NULL
+    id INTEGER(45) NOT NULL
     AUTO_INCREMENT,
-	patty_name VARCHAR
-    (80) NOT NULL,
+	burger_name VARCHAR
+    (45) NOT NULL,
 	devoured BOOLEAN DEFAULT false,
 	PRIMARY KEY
     (id)

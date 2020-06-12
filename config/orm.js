@@ -1,8 +1,8 @@
-var burger_db = require("./connection.js");
+var db = require("./connection.js");
 
 var orm = {
   selectBurger: function (cb) {
-    burger_db.query("SELECT * FROM burgers", function (err, data) {
+    db.query("SELECT * FROM burgers", function (err, data) {
       if (err) throw err;
 
       cb(data);
@@ -10,7 +10,7 @@ var orm = {
   },
 
   insertBurger: function (newBurger, cb) {
-    var query = burger_db.query(
+    var query = db.query(
       "INSERT INTO burgers (burger_name) VALUES (?)",
       [newBurger],
       function (err, data) {
@@ -24,7 +24,7 @@ var orm = {
   },
 
   updateBurger: function (burger, cb) {
-    burger_db.query(
+    db.query(
       "UPDATE burgers SET ? WHERE ?",
       [
         {

@@ -9,7 +9,7 @@ router.get("/", function (req, res) {
     var not_devoured = [];
 
     for (var i = 0; i < data.length; i++) {
-      if (data[i].eaten) {
+      if (data[i].devoured) {
         devoured.push(data[i]);
       } else {
         not_devoured.push(data[i]);

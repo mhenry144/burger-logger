@@ -13,6 +13,49 @@
             "previewLimit": 50,
             "server": "localhost",
             "username": "root"
+        },
+        {
+            "askForPassword": false,
+            "database": "burgers_db",
+            "driver": "MySQL",
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "name": "burgers_db",
+            "password": "123456789",
+            "port": 3306,
+            "previewLimit": 50,
+            "server": "localhost",
+            "username": "root"
+        },
+        {
+            "askForPassword": false,
+            "database": "burgers_db",
+            "driver": "MySQL",
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "name": "burgers_db",
+            "password": "123456789",
+            "port": 3306,
+            "previewLimit": 50,
+            "server": "localhost",
+            "username": "root"
+        },
+        {
+            "askForPassword": false,
+            "connectionTimeout": 60,
+            "database": "burgers_db",
+            "driver": "MySQL",
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "name": "burgers_db",
+            "password": "123456789",
+            "port": 3306,
+            "previewLimit": 50,
+            "server": "localhost",
+            "username": "root"
         }
     ]
 }

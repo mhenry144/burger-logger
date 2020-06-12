@@ -1,5 +1,5 @@
-INSERT INTO patties
-    (patty_name, devoured)
+INSERT INTO burgers
+    (burger_name, devoured)
 VALUES
     ("Adult Sized Krabby Patty", false),
     ("Pipsqueak Patty", true),

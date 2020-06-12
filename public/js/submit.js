@@ -15,9 +15,9 @@ $(document).ready(function () {
     });
   });
 
-  $(document).on("click", ".eat-button", function (event) {
+  $(document).on("click", ".devoured-button", function (event) {
     var burger = {
-      eaten: 1,
+      devoured: 1,
       id: $(this).data("id"),
     };
 
